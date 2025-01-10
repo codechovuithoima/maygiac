@@ -84,7 +84,7 @@ production:
     <<: *default
     database: maygiac_production
     username: maygiac
-    url: <%= ENV['MAYGIAC_DATABASE_URL'] %>
+    url: <%= ENV['DATABASE_URL'] %>
     password: <%= ENV["MAYGIAC_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
